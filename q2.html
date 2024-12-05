@@ -1,1 +1,45 @@
-<!-- rewrite this document with the required content -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A document about Tim Berners-Lee, the inventor of the World Wide Web.">
+    <title>Tim Berners-Lee - Inventor of the World Wide Web</title>
+</head>
+<body>
+    <main>
+        <h1>Tim Berners-Lee: Inventor of the World Wide Web</h1>
+        <p>Tim Berners-Lee is best known as the inventor of the World Wide Web. His groundbreaking work revolutionized the way we access and share information.</p>
+        <figure>
+            <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg" 
+                     alt="Portrait of Tim Berners-Lee, the inventor of the World Wide Web" width="400">
+            </a>
+            <figcaption>Click the image to learn more about Tim Berners-Lee on Wikipedia.</figcaption>
+        </figure>
+        <section>
+            <h2>Three Key Parts of the World Wide Web</h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language (HTML) is the standard language used to create and structure web pages.</dd>
+                <dt>HTTP</dt>
+                <dd>The Hypertext Transfer Protocol (HTTP) is the foundation of data communication for the web, enabling the transfer of resources.</dd>
+                <dt>URL</dt>
+                <dd>The Uniform Resource Locator (URL) is the address used to access resources on the web.</dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span is="x-copyright-year"></span> All rights reserved.</p>
+        <script>
+            class CopyrightYear extends HTMLElement {
+                connectedCallback() {
+                    this.innerText = new Date().getFullYear();
+                }
+            }
+            customElements.define("x-copyright-year", CopyrightYear);
+        </script>
+    </footer>
+</body>
+</html>
+
